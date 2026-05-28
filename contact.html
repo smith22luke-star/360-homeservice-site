@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact | 360 Home Services — Sammamish, WA</title>
+<meta name="description" content="Get in touch with 360 Home Services. Call, email, or check our hours. Sammamish-based pressure washing, gutter cleaning, and anti-moss treatment."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:#fff;color:#111;-webkit-font-smoothing:antialiased}
+
+.bar{background:#111;border-bottom:1px solid rgba(255,255,255,.08);text-align:center;padding:9px 1rem;font-size:13px;font-weight:400;color:#7b68ee;letter-spacing:.02em}
+
+nav{background:rgba(0,0,0,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06);padding:0 2.5rem;height:120px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.nav-logo img{height:92px;width:auto;display:block}
+.nav-links{list-style:none;display:flex;align-items:center;gap:2.25rem}
+.nav-links a{color:#fff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;transition:color .2s}
+.nav-links a:hover{color:rgba(255,255,255,.6)}
+.nav-links a.active{color:rgba(226,226,226,1)}
+.nav-links a.active::before{content:'– '}
+
+/* CONTACT SECTION — user-supplied, prefixed with c360- to avoid collisions */
+.c360{font-family:'Montserrat',sans-serif;background:#fff;padding:60px 40px;text-align:center}
+.c360-headline{font-size:38px;font-weight:700;color:#111;line-height:1.15;margin:0 0 16px 0}
+.c360-sub{font-size:16px;font-weight:300;color:#444;line-height:1.7;margin:0 auto 40px;max-width:480px}
+.c360-items{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:0}
+.c360-item{background:linear-gradient(135deg,#1a1a2e 0%,#111 60%,#1e1a3a 100%);border:1px solid rgba(107,95,217,0.3);padding:24px 28px;min-width:200px;flex:1;max-width:280px;text-align:left;border-radius:4px}
+.c360-item-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff;margin-bottom:8px}
+.c360-item-value{font-size:15px;font-weight:300;color:#6B5FD9;text-decoration:none;display:block}
+.c360-item-value:hover{color:#a99ff0}
+.c360-hours-toggle{display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:16px}
+.c360-hours-toggle-label{font-size:15px;font-weight:300;color:#6B5FD9}
+.c360-hours-toggle-label span{color:#fff}
+.c360-hours-arrow{color:rgba(107,95,217,0.6);font-size:11px;transition:transform 0.2s;flex-shrink:0}
+.c360-hours-arrow.open{transform:rotate(180deg)}
+.c360-hours-list{display:none;margin-top:14px;border-top:1px solid rgba(107,95,217,0.2);padding-top:10px}
+.c360-hours-list.open{display:block}
+.c360-hours-row{display:flex;justify-content:space-between;font-size:13px;font-weight:300;color:#fff;padding:5px 0;border-bottom:1px solid rgba(107,95,217,0.08)}
+
+/* FOOTER */
+footer{background:rgb(22,22,22);border-top:1px solid rgba(255,255,255,.06);padding:1.75rem 2rem}
+.footer-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.footer-tag{font-size:13px;color:rgba(247,247,247,.75);font-style:italic;font-weight:400}
+.footer-socials{display:flex;gap:8px}
+.social-link{color:rgba(247,247,247,1);text-decoration:none;display:flex;align-items:center;transition:color .2s}
+.social-link:hover{color:rgba(190,184,247,1)}
+.social-link svg{width:40px;height:40px;fill:currentColor}
+
+@media(max-width:900px){
+  nav{padding:0 1.25rem}
+  .c360{padding:3rem 1.25rem}
+  .c360-headline{font-size:30px}
+  footer{padding:1.5rem 1.25rem}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<div class="bar">Now Booking for Summer!</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="https://img1.wsimg.com/isteam/ip/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/360%20-%20logo%20-%20no%20text.png/:/rs=h:113,cg:true,m/qt=q:95" alt="360 Home Services"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="quote.html">Get Your Quote</a></li>
+  </ul>
+</nav>
+
+<div class="c360">
+  <h2 class="c360-headline">Contact Us</h2>
+  <p class="c360-sub">Have a question or want to talk before booking? <br>Send us a message below.</p>
+
+  <div class="c360-items">
+
+    <div class="c360-item">
+      <p class="c360-item-label">Phone</p>
+      <a href="tel:4259023456" class="c360-item-value">425-902-3456</a>
+    </div>
+
+    <div class="c360-item">
+      <p class="c360-item-label">Email</p>
+      <a href="mailto:contact@360homeservice.co" class="c360-item-value">contact@360homeservice.co</a>
+    </div>
+
+    <div class="c360-item">
+      <p class="c360-item-label">Hours</p>
+      <div class="c360-hours-toggle" onclick="toggleHours()">
+        <div class="c360-hours-toggle-label">Open today <span>8am – 6pm</span></div>
+        <div class="c360-hours-arrow" id="c360arrow">▼</div>
+      </div>
+      <div class="c360-hours-list" id="c360hours">
+        <div class="c360-hours-row"><span>Monday</span><span>8:00 am – 6:00 pm</span></div>
+        <div class="c360-hours-row"><span>Tuesday</span><span>8:00 am – 6:00 pm</span></div>
+        <div class="c360-hours-row"><span>Wednesday</span><span>8:00 am – 6:00 pm</span></div>
+        <div class="c360-hours-row"><span>Thursday</span><span>8:00 am – 6:00 pm</span></div>
+        <div class="c360-hours-row"><span>Friday</span><span>8:00 am – 6:00 pm</span></div>
+        <div class="c360-hours-row"><span>Saturday</span><span>8:00 am – 6:00 pm</span></div>
+        <div class="c360-hours-row"><span>Sunday</span><span>8:00 am – 6:00 pm</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-tag">Student-Founded. Locally Operated. Fully Licensed, Bonded and Insured.</span>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/640049589190752" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12.061C22 6.505 17.523 2 12 2S2 6.505 2 12.061c0 5.022 3.657 9.184 8.438 9.939v-7.03h-2.54v-2.91h2.54V9.845c0-2.522 1.492-3.915 3.777-3.915 1.094 0 2.238.197 2.238.197v2.476h-1.26c-1.243 0-1.63.775-1.63 1.57v1.888h2.773l-.443 2.908h-2.33V22c4.78-.755 8.437-4.917 8.437-9.939z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/360.home.services/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M16.604 8.516c.13.35.198.719.203 1.091.033.622.033.811.033 2.386 0 1.574-.004 1.763-.033 2.385a3.273 3.273 0 0 1-.203 1.091 1.956 1.956 0 0 1-1.12 1.12c-.35.13-.719.198-1.091.204-.622.032-.811.032-2.386.032-1.574 0-1.763-.003-2.385-.032a3.273 3.273 0 0 1-1.091-.204 1.956 1.956 0 0 1-1.12-1.12 3.273 3.273 0 0 1-.204-1.09c-.032-.623-.032-.812-.032-2.386 0-1.575.003-1.764.032-2.386.006-.372.074-.741.204-1.09a1.956 1.956 0 0 1 1.12-1.12c.35-.13.718-.199 1.09-.204.623-.033.812-.033 2.386-.033 1.575 0 1.764.004 2.386.033.372.005.741.074 1.09.203.515.2.922.606 1.12 1.12zM12 15.033a3.033 3.033 0 1 0 0-6.066 3.033 3.033 0 0 0 0 6.066zm3.153-5.477a.71.71 0 1 0 0-1.418.71.71 0 0 0 0 1.418zM12 13.967a1.967 1.967 0 1 1 0-3.934 1.967 1.967 0 0 1 0 3.934zM12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10A10 10 0 0 0 12 2zm5.87 12.433c-.01.49-.102.974-.274 1.432a3.018 3.018 0 0 1-1.727 1.728 4.335 4.335 0 0 1-1.433.272c-.629.03-.829.037-2.432.037-1.604 0-1.819 0-2.433-.037a4.335 4.335 0 0 1-1.433-.272 3.018 3.018 0 0 1-1.727-1.728 4.335 4.335 0 0 1-.273-1.432c-.029-.63-.036-.83-.036-2.433 0-1.604 0-1.818.036-2.433.01-.49.102-.974.273-1.432a3.018 3.018 0 0 1 1.727-1.728 4.335 4.335 0 0 1 1.433-.272c.629-.03.829-.037 2.433-.037 1.603 0 1.818 0 2.432.037.49.009.974.101 1.433.272.794.307 1.42.934 1.727 1.728.172.458.264.943.273 1.432.03.63.036.83.036 2.433 0 1.604-.007 1.804-.036 2.433z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleHours() {
+    document.getElementById('c360hours').classList.toggle('open');
+    document.getElementById('c360arrow').classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
