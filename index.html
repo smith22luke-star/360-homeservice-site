@@ -39,20 +39,11 @@ nav{background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);-webkit-backdrop-filt
 .btn-hero{display:inline-block;text-decoration:none;padding:12px 28px;border:1px solid rgba(255,255,255,.65);color:#fff;font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;background:transparent;cursor:pointer;transition:background .2s,border-color .2s}
 .btn-hero:hover{background:rgba(255,255,255,.1);border-color:#fff}
 
-/* REVIEWS — rgb(107,95,217) purple — auto-rotating revolver */
+/* REVIEWS — rgb(107,95,217) purple — Elfsight Google Reviews widget */
 .reviews{background:rgb(107,95,217);padding:4rem 2rem}
 .reviews-inner{max-width:1160px;margin:0 auto}
 .reviews h2{font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700;color:#000;text-align:center;margin-bottom:2.5rem;letter-spacing:-.01em}
-.reviews-carousel{max-width:760px;margin:0 auto;display:grid;grid-template-areas:'stack';position:relative}
-.review-card{grid-area:stack;background:rgba(0,0,0,.12);border-radius:3px;padding:2rem 2.25rem;text-align:center;opacity:0;pointer-events:none;transition:opacity .45s ease}
-.review-card.active{opacity:1;pointer-events:auto}
-.review-stars{color:rgba(0,0,0,.65);font-size:18px;margin-bottom:1rem;letter-spacing:3px}
-.review-text{font-size:15px;color:rgba(0,0,0,.85);line-height:1.7;margin-bottom:1.25rem;font-style:italic}
-.review-author{font-size:13px;color:rgba(0,0,0,.55);font-weight:600;display:block}
-.reviews-dots{display:flex;justify-content:center;gap:10px;margin-top:1.75rem}
-.reviews-dot{width:10px;height:10px;border-radius:50%;background:rgba(0,0,0,.25);border:none;cursor:pointer;padding:0;transition:background .25s,transform .2s}
-.reviews-dot:hover{transform:scale(1.2)}
-.reviews-dot.active{background:rgba(0,0,0,.75)}
+.reviews-widget{max-width:1100px;margin:0 auto}
 .reviews-cta{text-align:center;margin-top:2rem}
 .btn-reviews-link{display:inline-block;text-decoration:none;padding:10px 22px;border:1px solid rgba(0,0,0,.35);color:#000;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;background:transparent;transition:background .2s}
 .btn-reviews-link:hover{background:rgba(0,0,0,.08)}
@@ -140,27 +131,10 @@ footer{background:rgb(22,22,22);border-top:1px solid rgba(255,255,255,.06);paddi
 <section class="reviews">
   <div class="reviews-inner">
     <h2>Customer Reviews</h2>
-    <div class="reviews-carousel" id="reviews-carousel">
-      <div class="review-card active">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Luke and Connor did an amazing job on our gutters and driveway. Professional, on time, and the results were excellent. Will definitely be calling them again."</p>
-        <span class="review-author">— Sarah M., Sammamish</span>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Best pressure washing we've had. They took care of our entire exterior — deck, driveway, siding — and everything looks brand new. Highly recommend."</p>
-        <span class="review-author">— Mike T., Issaquah</span>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">"Super responsive, fair pricing, and they left the property spotless. These guys are the real deal. Glad to support a local student-run business."</p>
-        <span class="review-author">— Jennifer K., Sammamish</span>
-      </div>
-    </div>
-    <div class="reviews-dots" id="reviews-dots" role="tablist" aria-label="Customer reviews">
-      <button class="reviews-dot active" type="button" aria-label="Review 1"></button>
-      <button class="reviews-dot" type="button" aria-label="Review 2"></button>
-      <button class="reviews-dot" type="button" aria-label="Review 3"></button>
+    <div class="reviews-widget">
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-0a194d67-cb2b-4461-a2c4-446c04c127b7" data-elfsight-app-lazy></div>
     </div>
     <div class="reviews-cta">
       <a href="https://g.page/r/360homeservices/review" target="_blank" rel="noopener" class="btn-reviews-link">See All Google Reviews →</a>
@@ -210,32 +184,6 @@ footer{background:rgb(22,22,22);border-top:1px solid rgba(255,255,255,.06);paddi
     </div>
   </div>
 </footer>
-
-<script>
-(function(){
-  var cards = document.querySelectorAll('#reviews-carousel .review-card');
-  var dots = document.querySelectorAll('#reviews-dots .reviews-dot');
-  if (cards.length < 2) return;
-  var idx = 0, timer;
-  function show(n){
-    cards[idx].classList.remove('active');
-    dots[idx].classList.remove('active');
-    idx = (n + cards.length) % cards.length;
-    cards[idx].classList.add('active');
-    dots[idx].classList.add('active');
-  }
-  function next(){ show(idx + 1); }
-  function start(){ timer = setInterval(next, 6000); }
-  function stop(){ clearInterval(timer); }
-  dots.forEach(function(d, i){
-    d.addEventListener('click', function(){ show(i); stop(); start(); });
-  });
-  var c = document.getElementById('reviews-carousel');
-  c.addEventListener('mouseenter', stop);
-  c.addEventListener('mouseleave', start);
-  start();
-})();
-</script>
 
 </body>
 </html>
