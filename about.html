@@ -40,9 +40,10 @@ nav{background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);-webkit-backdrop-filt
 .news-section{background:#fff;padding:4rem 2rem}
 .news-inner{max-width:1160px;margin:0 auto}
 .news-inner h2{font-size:clamp(1.8rem,2.5vw,2.4rem);font-weight:700;color:#111;text-align:center;margin-bottom:2.5rem;letter-spacing:-.01em}
-.news-pdf-wrap{max-width:480px;margin:0 auto;text-align:center}
+.news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem;max-width:1000px;margin:0 auto;align-items:start}
+.news-pdf-wrap{text-align:center}
 .news-pdf-wrap a{display:block;text-decoration:none}
-.news-pdf-wrap img{width:100%;display:block;box-shadow:0 4px 24px rgba(0,0,0,.15)}
+.news-pdf-wrap img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;display:block;box-shadow:0 4px 24px rgba(0,0,0,.15)}
 .news-pdf-caption{margin-top:.75rem;font-size:13px;color:#555;font-family:'Montserrat',sans-serif}
 .news-pdf-wrap .pdf-label{display:inline-block;margin-top:.75rem;font-size:13px;font-weight:600;color:rgb(107,95,217);text-decoration:none;border:1px solid rgba(107,95,217,.4);padding:8px 18px}
 .news-pdf-wrap .pdf-label:hover{background:rgba(107,95,217,.08)}
@@ -62,6 +63,7 @@ footer{background:rgb(22,22,22);border-top:1px solid rgba(255,255,255,.06);paddi
   .about-grid{grid-template-columns:1fr;gap:2.5rem}
   .about-photo-wrap{order:-1}
   .news-section{padding:3rem 1.25rem}
+  .news-grid{grid-template-columns:1fr;max-width:480px;gap:2rem}
   footer{padding:1.5rem 1.25rem}
   .footer-inner{flex-direction:column;align-items:flex-start}
 }
@@ -107,14 +109,25 @@ footer{background:rgb(22,22,22);border-top:1px solid rgba(255,255,255,.06);paddi
 <section class="news-section">
   <div class="news-inner">
     <h2>360 in the News</h2>
-    <div class="news-pdf-wrap">
-      <a href="https://img1.wsimg.com/blobby/go/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/PlateauNeighborsArticle.PDF" target="_blank" rel="noopener">
-        <img
-          src="https://img1.wsimg.com/isteam/ip/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/Conor-Luke-crop.jpeg/:/rs=w:600,m"
-          alt="Neighbors Magazine September 2025 — Young Entrepreneurs &amp; Soccer Standouts: Connor O'Brien &amp; Luke Smith"
-        />
-      </a>
-      <a href="https://img1.wsimg.com/blobby/go/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/PlateauNeighborsArticle.PDF" target="_blank" rel="noopener" class="pdf-label">View Article (PDF)</a>
+    <div class="news-grid">
+      <div class="news-pdf-wrap">
+        <a href="https://img1.wsimg.com/blobby/go/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/PlateauNeighborsArticle.PDF" target="_blank" rel="noopener">
+          <img
+            src="https://img1.wsimg.com/isteam/ip/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/Conor-Luke-crop.jpeg/:/rs=w:600,m"
+            alt="Plateau Neighbors Magazine September 2025 — Young Entrepreneurs &amp; Soccer Standouts: Connor O'Brien &amp; Luke Smith"
+          />
+        </a>
+        <a href="https://img1.wsimg.com/blobby/go/1b1178cc-5c99-4ab8-9aa5-95dc2a0717b6/PlateauNeighborsArticle.PDF" target="_blank" rel="noopener" class="pdf-label">Plateau Neighbors</a>
+      </div>
+      <div class="news-pdf-wrap">
+        <a href="plu-article.pdf" target="_blank" rel="noopener">
+          <img
+            src="plu-thumb.png"
+            alt="Pacific Lutheran University — Student-Athlete and Entrepreneur Connor O'Brien builds his future on and off the field"
+          />
+        </a>
+        <a href="plu-article.pdf" target="_blank" rel="noopener" class="pdf-label">Pacific Lutheran University</a>
+      </div>
     </div>
   </div>
 </section>
