@@ -20,10 +20,14 @@ body{font-family:'Montserrat',sans-serif;background:#fff;color:#111;-webkit-font
 nav{background:rgba(0,0,0,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06);padding:0 2.5rem;height:120px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
 .nav-logo img{height:92px;width:auto;display:block}
 .nav-links{list-style:none;display:flex;align-items:center;gap:2.25rem}
-.nav-links a{color:#fff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;transition:color .2s}
+.nav-links a{color:#fff;text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.08em;transition:color .2s,background .2s}
 .nav-links a:hover{color:rgba(255,255,255,.6)}
 .nav-links a.active{color:rgba(226,226,226,1)}
 .nav-links a.active::before{content:'– '}
+.nav-links a.cta{background:#7B68EE;color:#fff;padding:11px 22px;border-radius:999px;font-weight:700}
+.nav-links a.cta:hover{background:#6957d4;color:#fff}
+.nav-links a.cta.active{color:#fff}
+.nav-links a.cta.active::before{content:''}
 
 /* CONTACT SECTION — user-supplied, prefixed with c360- to avoid collisions */
 .c360{font-family:'Montserrat',sans-serif;background:#fff;padding:60px 40px;text-align:center}
@@ -72,7 +76,7 @@ footer{background:rgb(22,22,22);border-top:1px solid rgba(255,255,255,.06);paddi
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="quote.html">Get Your Quote</a></li>
+    <li><a href="quote.html" class="cta">Get Your Quote</a></li>
   </ul>
 </nav>
 
