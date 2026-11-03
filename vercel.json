@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/about", "destination": "/", "permanent": false },
+    { "source": "/about.html", "destination": "/", "permanent": false },
+    { "source": "/thank-you", "destination": "/", "permanent": false },
+    { "source": "/thank-you.html", "destination": "/", "permanent": false },
+    { "source": "/contact", "destination": "/", "permanent": false },
+    { "source": "/contact.html", "destination": "/", "permanent": false },
+    { "source": "/get-your-quote", "destination": "/", "permanent": false },
+    { "source": "/get-your-quote.html", "destination": "/", "permanent": false },
+    { "source": "/quote", "destination": "/", "permanent": false },
+    { "source": "/quote.html", "destination": "/", "permanent": false }
+  ]
+}
